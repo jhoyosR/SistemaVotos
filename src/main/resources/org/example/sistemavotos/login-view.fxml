@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sistemavotos.LoginController">
+   <center>
+      <Pane prefHeight="270.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="5.0" layoutY="92.0" text="Ingrese su número de identificación" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idTxT" layoutX="56.0" layoutY="124.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Button fx:id="continuarBtn" layoutX="84.0" layoutY="158.0" mnemonicParsing="false" onAction="#continuarBtnOnAction" style="-fx-background-color: #700000;" text="Continuar" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="12.0" />
+               </font></Button>
+            <Label fx:id="mensajeAdvLbl" layoutX="7.0" layoutY="186.0" text="Ingrese su identificación antes de continuar" textAlignment="CENTER" textFill="RED" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="mostrarResultadosBtn" layoutX="71.0" layoutY="236.0" mnemonicParsing="false" onAction="#mostrarAlerta" style="-fx-background-color: #700000;" text="Mostrar Resultados" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="10.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </center>
+   <left>
+      <Pane prefHeight="270.0" prefWidth="231.0" style="-fx-background-color: #700000;" BorderPane.alignment="CENTER">
+         <children>
+            <Ellipse layoutX="115.0" layoutY="135.0" radiusX="100.0" radiusY="80.0" stroke="#03bfb9" strokeType="INSIDE" strokeWidth="2.5" />
+            <Label layoutX="35.0" layoutY="117.0" text="VOTACIONES COLSAFA" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" fill="#04bdb7" layoutX="98.0" layoutY="134.0" opacity="0.75" startX="-68.00001525878906" startY="-1.52587890625E-5" stroke="#03bfb9" strokeWidth="2.0" />
+            <Label layoutX="35.0" layoutY="238.0" text="Derechos Reservados © 2024 " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="135.0" text="Armenia, Quindío" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

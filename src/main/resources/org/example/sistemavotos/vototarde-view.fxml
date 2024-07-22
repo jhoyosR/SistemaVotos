@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="467.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sistemavotos.VotosController">
+    <children>
+        <Label layoutX="150.0" layoutY="14.0" style="-fx-background-color: #700000;" text=" VOTACIONES COLSAFA " textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="149.0" fitWidth="133.0" layoutX="14.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Candidato.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.49" contrast="0.66" hue="-0.16" saturation="-0.68" />
+         </effect></ImageView>
+        <ImageView fitHeight="149.0" fitWidth="133.0" layoutX="167.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Candidato2.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+        <ImageView fitHeight="149.0" fitWidth="133.0" layoutX="317.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/voto-blanco1.jpeg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+        <Button fx:id="votoCandidato1JT" layoutX="63.0" layoutY="219.0" mnemonicParsing="false" onAction="#votarBtnOnAction1JT" style="-fx-background-color: #700000;" text="Votar" textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="10.0" />
+            </font>
+        </Button>
+        <Button fx:id="votoCandidato2JT" layoutX="214.0" layoutY="219.0" mnemonicParsing="false" onAction="#votarBtnOnAction2JT" style="-fx-background-color: #700000;" text="Votar" textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="10.0" />
+            </font>
+        </Button>
+        <Button fx:id="votoCandidatoBJT" layoutX="366.0" layoutY="219.0" mnemonicParsing="false" onAction="#votarBtnOnActionBJT" style="-fx-background-color: #700000;" text="Votar" textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="10.0" />
+            </font>
+        </Button>
+        <Label layoutX="188.0" layoutY="32.0" style="-fx-background-color: #700000;" text=" Jornada Tarde " textFill="WHITE">
+            <font>
+                <Font name="Baskerville Old Face" size="14.0" />
+            </font>
+        </Label>
+      <Label layoutX="66.0" layoutY="194.0" text="Chris" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="194.0" text="Carlos" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
